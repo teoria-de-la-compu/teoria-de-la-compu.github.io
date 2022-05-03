@@ -1,10 +1,10 @@
----
-layout: default
-title: Repaso
-has_children: true
-nav_order: 99
-usemathjax: true
----
+#---
+#layout: default
+#title: Repaso
+#has_children: true
+#nav_order: 99
+#usemathjax: true
+#---
 
 # Repaso
 
