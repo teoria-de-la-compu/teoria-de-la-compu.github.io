@@ -64,4 +64,34 @@ Construimos $$ S_{<M,w>}(\alpha):$$
 
 Notemos que si $$ M(w) = acepta $$, entonces $$ S_{<M,w>}(\alpha) = acepta \iff M_1(\alpha) $$, es decir:
 
-$$\mathcal{L}(S_{<M,w>}) = \mathcal{L}(M_1) $$
+$$\mathcal{L}(S_{<M,w>}) = \mathcal{L}(M_1) $$ 
+
+Por lo tanto:
+
+$$ <S_{<M,w>}> \notin X $$
+
+Pero si $$ M(w) \neq acepta, entonces S_{<M,w>}(\alpha) $$ no acepta la cadena.
+
+Entonces $$\mathcal{L}(S_{<M,w>}) = \emptyset = \mathcal{L}(M_\emptyset) $$}} 
+
+En ese caso:
+
+$$ <S_{<M,w>}> \in X $$
+
+Construyamos ahora una MT T que se comporta de esta forma:
+
+$$ T(<M,w>)=\begin {cases} acepta&\text{si }R(<S_{<M,w>}>) = rechaza\\rechaza&\text{si } R(<S_{<M,w>}>) = acepta\end{cases}$$
+
+Veamos que:
+
+$$ T(<M,w>) = acepta  $$
+$$ \iff R(<S_{<M,w>}>) = rechaza $$
+$$ \iff <S_{<M,w>}> \notin X \iff M(w) = acepta \iff <M,w> \in A_{MT} $$
+
+$$ T(<M,w>) = rechaza $$ 
+$$ \iff R(<S_{<M,w>}>) = acepta $$
+$$ \iff <S_{<M,w>}> \in X \iff M(w) = rechaza \iff <M,w> \notin A_{MT} $$
+
+Con lo que tenemos una MT que me permite decidir A_{MT}, lo que sabemos que no se puede.
+
+Entonces X no puede ser decidible.
