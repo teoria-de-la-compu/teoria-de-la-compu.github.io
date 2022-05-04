@@ -3,7 +3,7 @@ layout: default
 title: Operador de Salto de Turing
 has_children: false
 parent: Reducibilidad a Turing
-nav_order: 63
+nav_order: 53
 usemathjax: true
 ---
 
