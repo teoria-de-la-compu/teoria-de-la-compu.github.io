@@ -4,6 +4,7 @@ title: Teorema de Rice
 has_children: false
 nav_order: 61
 usemathjax: true
+parent: Clase 6
 ---
 
 # Teorema de Rice

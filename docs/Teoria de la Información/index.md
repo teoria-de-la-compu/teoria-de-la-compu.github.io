@@ -3,6 +3,7 @@ layout: default
 title: Teoría de la Información
 has_children: false
 nav_order: 62
+parent: Clase 6
 usemathjax: true
 ---
 
