@@ -32,9 +32,9 @@ Existe una MT M tq $$ M(w)=\begin{cases}acepta&\text{si } w \in A\\rechaza&\text
 
 Si suponemos que cada paso tarda lo mismo, podemos calcular la cantidad de pasos y de ahí el tiempo. Es decir cuánto tiempo tarda la MT en aceptar o rechazar una palabra w será cuántos pasos recorre la máquina hasta llegar a un estado de rechazo.
 
-En general vamos a expresar T en función de la longitud de la cadena de entrada $$ |w| = n $$.
+En general vamos a expresar T en función de la longitud de la cadena de entrada len(w) = n.
 
-Como trabajamos con computadoras digitales, nos va a interesar hacer estos análisis en la base 2. Por lo que $$ |w| $$ será la cantidad de bits necesarios para representar la entrada w.
+Como trabajamos con computadoras digitales, nos va a interesar hacer estos análisis en la base 2. Por lo que len(w) será la cantidad de bits necesarios para representar la entrada w.
 
 $$ T(n):\text{ Tiempo que tarda la MT M en terminar cuando se alimenta con una cadena w de longitud n }$$
 
