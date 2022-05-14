@@ -2,8 +2,8 @@
 layout: default
 title: Operador de Salto de Turing
 has_children: false
-parent: Reducibilidad a Turing
-nav_order: 53
+parent: Clase 5
+nav_order: 63
 usemathjax: true
 ---
 
@@ -73,5 +73,8 @@ Reemplazando...
 $$ D^A(<D^A>) = no\ acepta $$
 
 Es decir que para que $$D^A$$ acepte la condificación de $$D^A$$ se tiene que no aceptar, lo que es una contradicción.
+
+## Consecuencia interesante...
+
 
 

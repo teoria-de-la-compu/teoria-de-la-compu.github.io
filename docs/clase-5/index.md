@@ -7,3 +7,7 @@ usemathjax: true
 ---
 # Clase 5
 
+## Reducibilidad a Turing
+
+¿Se puede reducir un problema a otro utilizando Máquinas de Turing?
+
