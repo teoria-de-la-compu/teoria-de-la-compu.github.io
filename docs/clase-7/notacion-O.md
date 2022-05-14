@@ -162,7 +162,7 @@ Tomamos los términos.
 $$ log_b(n) = x $$  
 $$ log_b(a) = y $$  
 
-Entonces ## b^x = n, b^y = a $$.
+Entonces $$ b^x = n, b^y = a $$.
 
 Por lo que $$ a^{1/y} = (b^y)^{1/y} = b $$
 
@@ -184,7 +184,7 @@ Vimos que la suma de órdenes vale, pero ¿que pasá con el producto f_1 * f_2?
 
 Formalmente, si $$ f_1,f_2 \in \mathcal{O}(g)$$ entonces $$f_1 . f_2 \in \mathcal{O}(g) $$?
 
-Supongamos que $$ g(n) = n, f_1(3n)$$ y $$f_2(2n)$$, $$f_1(n).f_2(n) = 3n.2n. = 6n^2 que vimos más arriba que no está en el órden de n.
+Supongamos que $$ g(n) = n, f_1(3n) $$ y $$ f_2(2n) $$, $$ f_1(n).f_2(n) = 3n.2n. = 6n^2 $$ que vimos más arriba que no está en el órden de n.
 
 Pero sí se conserva la transitividad.
 
@@ -266,7 +266,7 @@ Vamos a usar la definición del libro de Michael Sipser, basada en límite.
 
 **def**. Sean $$f,g: \Bbb{N} \rightarrow \Bbb{R}^+ $$, decimos que $$ f \in \omicron(g) $$ si vale:
 
-$$\lim_{n \to +\infty} \frac{f(x)}{g(x)}$$
+$$\lim_{n \to +\infty} \frac{f(x)}{g(x)} = 0$$
 
 Es decir, $$\forall\ \epsilon > 0$$, $$\exists n_0 \in \Bbb{N}\ \forall n \geq n_0 $$ tal que:
 
