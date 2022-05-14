@@ -49,8 +49,6 @@ Definimos el tiempo de ejecución en **mejor caso** para M
 $$ T_{mejor}: \Bbb{N} \rightarrow \Bbb{N} $$  
 $$ T_{mejor}(n) = min \{ cantidad de pasos que toma en terminar M(w) cuando |w| = n \} $$
 
-Análogamente
-
 Análogamente el **peor caso** para M
 
 $$ T_{peor}: \Bbb{N} \rightarrow \Bbb{N} $$  
