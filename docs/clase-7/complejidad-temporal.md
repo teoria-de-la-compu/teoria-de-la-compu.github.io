@@ -70,4 +70,4 @@ $$ T_{promedio}(n) = \frac
 { \sum_{w\in\Sigma^*}{(\text{cantidad de pasos que tardad M(w) en terminar})}}
 {\#\{ w\in\Sigma^* \}} $$  
 
-T_{peor} puede resultar en un polinomio lleno de términos. Muchas veces eso es poco informativo y hace más dificil el análisis por lo que vamos a usar una simplificacón lo bastante buena para comparar.
+$$ T_{peor} $$ puede resultar en un polinomio lleno de términos. Muchas veces eso es poco informativo y hace más dificil el análisis por lo que vamos a usar una simplificacón lo bastante buena para comparar.
