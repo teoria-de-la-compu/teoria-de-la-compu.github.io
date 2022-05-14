@@ -2,7 +2,7 @@
 layout: default
 title: Función de Ackermann
 has_children: false
-nav_order: 40
+nav_order: 45
 parent: Clase 4
 usemathjax: true
 ---
