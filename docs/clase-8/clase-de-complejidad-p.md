@@ -16,7 +16,7 @@ Estos son los problemas que se pueden resolver realísticamente en una computado
 
 Ejemplos:
 
-1. PATH = { <G,s,t> | G es un grafo dirigido que tiene un camino de s a t.}
-2. COPRIMOS = { <x,y> | x e y son co-primos. }
+1. PATH = { <G,s,t> \| G es un grafo dirigido que tiene un camino de s a t.}
+2. COPRIMOS = { <x,y> \| x e y son co-primos. }
 
 Estos problemas planteados de manera inocente terminan deviniendo en problemas exponenciales. Pero gracias a soluciones particulares logramos encontrar soluciones en tiempo polinomial. 
