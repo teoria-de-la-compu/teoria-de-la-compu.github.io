@@ -10,7 +10,7 @@ usemathjax: true
 
 Decimos que la clase de complejidad P es la clase de lenguajes que es decidible en tiempo polinomial en una Máquina de Turing determinística de una sola cinta y denotamos:
 
-$$ \bigcup\limits_{k} TIME( nˆ{k} ) $$
+$$ \bigcup\limits_{k} TIME( n^k ) $$
 
 Estos son los problemas que se pueden resolver realísticamente en una computadora.
 

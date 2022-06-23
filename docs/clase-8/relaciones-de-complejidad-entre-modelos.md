@@ -34,7 +34,7 @@ Recordemos que las distintas combinaciones de estados resultan en algo similar a
 
 Teniendo en cuenta esto podemos probar el siguiente teorema.
 
-**Teor**. Sea M una MT No Determinística con tiempo de ejecución T(n) que decide el lenguaje L, existe una MT D determinista cuyo tiempo de ejecución es $$ \mathcal{O(2ˆ{t_{(n)}})} $$ y decide el mismo lenguaje.
+**Teor**. Sea M una MT No Determinística con tiempo de ejecución T(n) que decide el lenguaje L, existe una MT D determinista cuyo tiempo de ejecución es $$ \mathcal{O(2^{t_{(n)}})} $$ y decide el mismo lenguaje.
 
 **dem**. (Idea). Sea M la máquina no determinística. Se puede construir una MT de 3 cintas D.
 
@@ -48,6 +48,6 @@ Como decide el lenguaje (no se cuelga!!), siempre termina y cada rama lo hace en
 
 La simulación explora el árbol a través de una búsqueda breadth first. Es decir, visita todos los nodos de profundidad d antes de visitar el primero de profunidad d+1.
 
-El número total de nodos en el árbol es menos de 2 veces el máximo de número de hojas, por lo que podemos acotarlo por $$ \mathcal{O(bˆ{t_{(n)}})} $$. Desde la raíz hasta un nodo es $$ \mathcal{O(t_{(n)})} $$. Luego el tiempo de ejecución $$ \mathcal{O(t_{(n)}*bˆ{t_{(n)}})} = \mathcal{O(2ˆ{t_{(n)}})} $$.
+El número total de nodos en el árbol es menos de 2 veces el máximo de número de hojas, por lo que podemos acotarlo por $$ \mathcal{O(b^{t_{(n)}})} $$. Desde la raíz hasta un nodo es $$ \mathcal{O(t_{(n)})} $$. Luego el tiempo de ejecución $$ \mathcal{O(t_{(n)}*b^{t_{(n)}})} = \mathcal{O(2^{t_{(n)}})} $$.
 
-Por el teorema anterior, convertirlo a una TM Deterministica de una sola cinta eleva al cuadrado el tiempo. Por lo que el tiempo de ejecución sobre un simulador de una sola cinta es: $$ \mathcal{O(2ˆ{t_{(n)}})}ˆ2 = 2^{\mathcal{O(2*t(n))}} = 2^{\mathcal{O(t(n))}}$$, quedando probado el teorema.
+Por el teorema anterior, convertirlo a una TM Deterministica de una sola cinta eleva al cuadrado el tiempo. Por lo que el tiempo de ejecución sobre un simulador de una sola cinta es: $$ \mathcal{O(2^{t_{(n)}})}^2 = 2^{\mathcal{O(2*t(n))}} = 2^{\mathcal{O(t(n))}}$$, quedando probado el teorema.
