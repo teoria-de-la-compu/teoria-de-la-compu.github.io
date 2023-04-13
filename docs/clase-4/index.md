@@ -5,6 +5,6 @@ has_children: true
 nav_order: 40
 usemathjax: true
 ---
-# Clase 4
+# Decidibilidad
 
-En esta clase vamos a ver otros modelos de computo más allá de la MT.
+Vamos a estudiar los conceptos de Decibilidad y el Problema de la Parada o la Detención.

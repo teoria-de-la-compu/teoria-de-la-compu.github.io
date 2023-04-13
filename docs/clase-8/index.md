@@ -5,6 +5,6 @@ has_children: true
 nav_order: 80
 usemathjax: true
 ---
-# Clase 8
+# Análisis de Algoritmos y Análisis asintótico
 
-Hoy vamos a ver...
+Hoy vamos presentar las ideas generales de Análisis de Algoritmos y Análisis asintótico y las notación O y sus variantes.
