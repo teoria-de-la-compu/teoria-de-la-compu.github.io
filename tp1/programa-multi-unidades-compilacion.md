@@ -13,17 +13,17 @@ int main(void) {
 }
 </code></pre>
 
-Para compilar: <!-- .element: class="fragment" -->
+Para compilar:
 
 <pre class="bash"><code>
 $ gcc hola.c -o hola
 $ ./hola
 Hola, mundo!%
 $
-</code></pre> <!-- .element: class="fragment" -->
+</code></pre>
 
 
-Alcanza con una sola unidad de compilación o archivo .c
+Alcanza con una sola unidad de traducción o archivo .c
 
 ¿programas más grandes? <!-- .element: class="fragment" -->
 
@@ -61,7 +61,7 @@ Las mayúsculas y las minúsculas son distintas.<!-- .element: class="fragment" 
 ### Modularización de los componentes en C
 
 - headers files $ \rightarrow $ .h<!-- .element: class="fragment" -->
-- unidades de compilación $ \rightarrow $ .c<!-- .element: class="fragment" -->
+- unidades de traducción $ \rightarrow $ .c<!-- .element: class="fragment" -->
 
 
 ### Headers files
@@ -178,9 +178,9 @@ Esta implementacion solo funciona con la cadena aba ;)
 <!-- .element: class="fragment" -->
 
 
-### Compilando los módulos como unidades de compilación
+### Compilando los módulos como unidades de traducción
 
-- Se compila cada Unidad de compilación obteniendo el código objeto
+- Se compila cada Unidad de traducción obteniendo el código objeto
 - Estas contienen las implementaciones de las funciones que declaramos en los header files
 <!-- .element: class="fragment" -->
 - Para generar el ejecutable le tenemos que indicar al linker los nombres de los módulos .o que estamos usando.

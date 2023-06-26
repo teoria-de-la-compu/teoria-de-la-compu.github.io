@@ -50,7 +50,7 @@ Con eso obtenemos que la longitud de <x,y> queda así:
 |<x,y>|=2|x|+2+|y|
 
 
-**def**. Dada una cadena $ x \in \Sigma^* $, una descripción de x es un par <M,w>, donde M es una MT tal que M(w) se detiene y escribe x en la cinta como salida. 
+**def**. Dada una cadena $ x \in \Sigma^* $ , una descripción de x es un par <M,w>, donde M es una MT tal que M(w) se detiene y escribe x en la cinta como salida. 
 
 
 **def**. Dada una cadena $ x \in \Sigma^* $, d(x) es la descripción más corta posible de x.  

@@ -254,13 +254,13 @@ $ p \rightarrow B, p \rightarrow D], 12) \\} $ <!-- .element: class="fragment" -
 $ 00 \rightarrow A $ 
 $ 010 \rightarrow E $
 $ 011 \rightarrow C $
-$ 110 \rightarrow B $
-$ 111 \rightarrow D $
+$ 10 \rightarrow B $
+$ 11 \rightarrow D $
 
 
 El mensaje codificado
 
 ```
-C  A B  A B  A D  C  A D  E  D    -> 12 bytes 
-01100110001100011101100111010111  -> 32 bits -> 4 bytes
+C  A B A B A D C  A D E  D   -> 12 bytes 
+011001000100011011001101011  -> 27 bits < 4 bytes
 ```

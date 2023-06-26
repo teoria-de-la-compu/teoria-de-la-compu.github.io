@@ -5,6 +5,9 @@ has_children: true
 nav_order: 50
 usemathjax: true
 ---
-# Reducibilidad
+# Clase 5
 
-Vamos a presentar el concepto de Reducibilidad many-to-one y el Problema de Correspondencia de Post. 
+## Reducibilidad a Turing
+
+¿Se puede reducir un problema a otro utilizando Máquinas de Turing?
+

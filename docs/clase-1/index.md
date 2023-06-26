@@ -5,7 +5,6 @@ has_children: true
 nav_order: 10
 usemathjax: true
 ---
-# Presentación de la Materia y Repaso
+# Clase 1
 
-Presentamos la materia y repasamos algunos temas de Matemáticas y Lenguajes que vamos a ver durante la materia.
-
+En esta clase vamos a ver otros modelos de computo más allá de la MT.

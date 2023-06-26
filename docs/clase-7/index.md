@@ -5,6 +5,6 @@ has_children: true
 nav_order: 70
 usemathjax: true
 ---
-# Temas avanzados de Computación
+# Clase 7
 
-Utilizando las MT vamos a estudiar la noción de información, la representación en binario de los datos, el concepto de compresibilidad y el Algortimo de Huffman.
+Hoy vamos a ver...

@@ -1,4 +1,3 @@
-// palindromo_safando.c
 #include <string.h>
 #include "palindromo.h"
 
