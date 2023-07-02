@@ -22,5 +22,3 @@ $ 2 * 2 *.. * 2 $
 
 $ 2^n $ <!-- .element: class="fragment" -->
 
-
-saraasa
