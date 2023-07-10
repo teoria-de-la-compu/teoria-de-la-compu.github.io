@@ -186,9 +186,6 @@ R = "Para <x,y>, donde x e y son números enteros en binario:
 Esto significa que compilar es chévere!
 
 
-### ¿ P = NP ?
-
-
 
 ### Problemas NP-Completo
 
@@ -202,11 +199,120 @@ Estos problemas se llaman **NP-Completo**.
 Si podemos reducir many-to-one nuestro problema a uno de estos problemas NP-Completo, sabemos que nuestro problema está en la clase NP y tal vez no valga la pena buscar una solución polinómica determinística.
 
 
+Son problemas de **decisión**:
+
+- existe un camino hamiltoniano en el grafo G?
+- existe un k-clique en el grafo G'?
+- existe una combinación de variables booleanas que satisfagan una fórmula $ \phi $.
+
+Deben responder Sí o No, true o false, 0 o 1.
+
+
+Son problemas de **optimización**. Ej: 
+
+- El camino hamiltonianos dentro del grafo G
+- El subgrafo k-clique del grafo G'
+- Una combinación de variables booleanas que satisfagan la fórmula $ \phi $.
+
+Entre todas las respuestas factibles se debe responder la que maximiza o minimiza un objetivo dado.
+
+
+**def** L es NP-Completo si 
+
+**def**. B es NP-Completo si cumple estas dos condiciones:
+
+1. B  $ \in $ NP y...
+2. A $  \leq_{P} $ A para algún problema NP-completo conocido.
+
+
+#### Genealogía de Problemas NP-Completos
+
+SUBSET COVER $ \leq_{P} $ VERTEX COVER $ \leq_{P} $ CLIQUE $ \leq_{P} $ 3-SAT $ \leq_{P} $ SAT $ \leq_{P} $ CIRCUIT SAT $ \leq_{P} $ NP
+
+
+##### CIRCUIT SAT
+
+Dado un diagrama queremos verificar la salida de una entrada en tiempo P.
+
+![Un circuito facilón](circuit-satisfiability.png)
+
+
+#### SAT
+
+Lo transformo en SAT escribiendo la expresión booleana:
+
+F = X + YZ
+
+
+#### 3-SAT
+
+O forma normal conjuntiva - 3 CNF
+
+Reescribimos el circuito con una conjunción de términos disyuntivos...
+
+Un AND grande de ORs con todas las variables y sus posibles valores.
+<!-- .element: class="fragment" -->
+
+Usando álgebra de Boole y Leyes de De Morgan...
+<!-- .element: class="fragment" -->
+
+
+$ F = X + YZ $
+
+$   = (X+Y).(X+Z) $ 
+<!-- .element: class="fragment" -->
+
+$   = (X+Y+Z\overline{Z}) (X+Y\overline{Y}+Z) $
+<!-- .element: class="fragment" -->
+
+$   = (X+Y+Z) (X+Y+\overline{Z}) (X+Y+Z) (X+\overline{Y}+Z) $
+<!-- .element: class="fragment" -->
+
+$   = (X+Y+Z) (X+Y+\overline{Z}) (X+\overline{Y}+Z) $
+<!-- .element: class="fragment" -->
+
+
+### k-Clique
+
+Podemos reducir 3-SAT a k-Clique
+
+A partir de la expresión generamos un digrafo:
+
+1. Cada variable es un vértice y las agrupamos por clausula.
+2. Conectamos los vértices con vértices de otra clausulas que no se contradigan. Ej: X conecta a Y, pero Y no a $ \overline{Y} $.
+
+Si el grafo tiene un k-clique, entonces hay una combinación de X, Y y Z que satisfaga la fórmula.
+
+
+$ (X+Y+Z) (X+Y+\overline{Z}) (X+\overline{Y}+Z) $
+
+![k-clique a partir de la formula](3sat-k-clique.SVG)
+<!-- .element: class="fragment" -->
+
+
+|Clase|Condición|Tipo|
+|:---:|:-------:|:--:|
+|P    |Existe MTD que decide en $ O(n^k) $ |Decisión|
+|NP   |Existe MTN que decide en $ O(n^k) $ |Decisión|
+|NP-Complete|En NP y reducible a otro NP-Completo |Decisión|
+|NP-Hard|Reducible a NP-Completo, no al reves|Optimización|
+
+
 #### Problemas NP-Hard
 
-
-#### Clase CO-NP
-
+No satisfacen la primer condición de los NP-Complete.
 
 
+#### Conjeturando...
 
+![P = NP?](P_np_np-complete_np-hard.svg)
+
+
+#### ¿Qué hacer?
+
+Si nos topamos con un problema en estas clases de complejidad:
+
+- Heurísticas. Proponen solución rápida no precisa y se acerca.
+- Algoritmos de aproximación. Basados en modelos, aproximan una solución con ciertas cotas o límites.
+- Algoritmos paramétricos. Reducciones del problema con algún parámetro.
+- IA, Machine Learning & et al.
