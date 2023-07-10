@@ -250,7 +250,7 @@ O forma normal conjuntiva - 3 CNF
 
 Reescribimos el circuito con una conjunción de términos disyuntivos...
 
-Un AND grande de ORs con todas las variables y sus posibles valores.
+Una serie de ANDs con ORs con todas las variables y sus posibles valores.
 <!-- .element: class="fragment" -->
 
 Usando álgebra de Boole y Leyes de De Morgan...
